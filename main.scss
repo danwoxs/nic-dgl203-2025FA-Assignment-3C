@@ -3,7 +3,7 @@
 
 body {
   background: $primary-color;
-  color: #ffffff;
+  color: set-text-color($primary-color);
   height: 100vh;
   font-family:
     segoe ui,
@@ -23,7 +23,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: set-text-color($primary-color);
 }
 
 header {
@@ -58,5 +58,5 @@ footer {
     right: 1rem;
     text-align: right;
     padding:1rem;
-    color: #ffffff;
+    color: set-text-color($primary-color);
 }
