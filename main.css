@@ -313,6 +313,25 @@
   .projects_items {
     grid-template-columns: repeat(2, 1fr);
   }
+  .projects .text-secondary {
+    font-size: 3rem;
+  }
+  .contact_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1026px) {
+  .projects_items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .projects_bio-image {
+    height: 50vh;
+  }
 }
 body {
   background: #272727;
