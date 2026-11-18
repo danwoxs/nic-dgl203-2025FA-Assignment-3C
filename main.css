@@ -7,32 +7,28 @@
 body {
   background: #272727;
   color: #ffffff;
-  font-weight: 700;
+  height: 100vh;
+  font-family: segoe ui, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
 }
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  width: 40%;
-}
-.main .main_paragraph1, .main .main_paragraph2 {
-  font-weight: 700;
-}
-.main .main_paragraph1:hover, .main .main_paragraph2:hover {
-  color: pink;
-}
-.main .main_paragraph2:hover {
-  color: #ff652f;
-}
-@media (max-width: 800px) {
-  .main {
-    flex-direction: column;
-  }
+h1, h2, h3 {
+  font-weight: 400;
 }
 
-.light {
-  background: white;
-  color: black;
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

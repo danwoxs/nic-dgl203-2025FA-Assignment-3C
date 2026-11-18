@@ -1,62 +1,31 @@
-@import 'resets';
-@import 'variables';
+@import 'config';
 
-@function weight($weight-name) {
-    @return map-get($font-weights, $weight-name);
-}
-
-@mixin flexCenter($direction) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
-}
-
-@mixin theme($light-theme:true) {
-    @if $light-theme {
-        background: lighten($primary-color, 100%);
-        color: darken($text-color, 100%);
-    } @else {
-        background: darken($primary-color, 20%);
-        color: lighten($text-color, 20%);
-    }
-}
-
-@mixin mobile {
-    @media (max-width: $mobile) {
-        @content;
-    }
-}
-
-body {
+body{
     background: $primary-color;
-    color: $text-color;
-    font-weight: map-get($font-weights, bold); 
+    color: #ffffff;
+    height: 100vh;
+    font-family: segoe ui, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
 }
 
-.main {
-   @include flexCenter(row);
-    width: 80% - 40%;
-    #{&}_paragraph1 {
-        font-weight: weight(bold);
+h1, h2, h3 {
 
-        &:hover {
-            color: pink;
-        }
-    }
-
-    #{&}_paragraph2 {
-        @extend .main_paragraph1;
-
-        &:hover {
-            color: $accent-color;
-        }
-    }
-    @include mobile {
-        flex-direction: column;
-    }
+    font-weight: 400;
 }
 
-.light {
-    @include theme(true);
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+}
+
+main {
+    height: 100%;
+    width: 100%;
 }
