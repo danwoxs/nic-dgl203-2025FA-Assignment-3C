@@ -1,6 +1,7 @@
 @import "config";
 @import "home";
 @import "menu";
+@import "about";
 
 body {
   background: $primary-color;
@@ -25,6 +26,10 @@ h3 {
 a {
   text-decoration: none;
   color: set-text-color($primary-color);
+}
+
+.text-secondary {
+    color: $secondary-color;
 }
 
 header {
