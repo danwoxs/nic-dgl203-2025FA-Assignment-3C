@@ -156,6 +156,24 @@
 .about_bio .text-secondary {
   padding-bottom: 1rem;
 }
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.about .jobs_job {
+  background: rgb(64.5, 64.5, 64.5);
+  padding: 0.5rem;
+  border-bottom: 5px solid #ff652f;
+}
+.about .jobs_job h2, .about .jobs_job h3 {
+  margin: 0.5rem 0;
+}
+.about .jobs_job h6 {
+  margin: 0.3rem 0;
+}
 
 body {
   background: #272727;
