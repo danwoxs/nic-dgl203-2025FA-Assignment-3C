@@ -57,7 +57,7 @@
           top: 0;
           opacity: 0.9;
         }
-        .projects_btn {
+        .projects-btn {
           opacity: 1;
         }
       }
@@ -75,7 +75,7 @@
       text-align: center;
     }
 
-    &_btn {
+    .projects-btn {
       opacity: 0;
       color: set-text-color($secondary-color);
       @include transition-ease;

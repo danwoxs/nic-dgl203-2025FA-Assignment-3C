@@ -230,7 +230,7 @@
   top: 0;
   opacity: 0.9;
 }
-.projects_items_item:hover .projects_btn {
+.projects_items_item:hover .projects-btn {
   opacity: 1;
 }
 .projects_items_btns {
@@ -244,12 +244,12 @@
   align-items: center;
   text-align: center;
 }
-.projects_items_btn {
+.projects_items .projects-btn {
   opacity: 0;
   color: #000000;
   transition: all 0.5s ease-in-out;
 }
-.projects_items_btn:hover {
+.projects_items .projects-btn:hover {
   color: #ffffff;
 }
 .projects .social-icons {
